@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: "Armenia";
   src: url(./font/BraindAmanor.otf);
@@ -21,7 +27,7 @@ body {
   color: #fff;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.208), rgba(0, 0, 0, 0.559)),
-    url("./images/menua2.jpg");
+    url("./images/photo_2025-01-12_10-40-33.jpg");
   background-repeat: no-repeat;
   background-color: #000;
   background-size: cover;
@@ -42,7 +48,7 @@ body {
 .title {
   color: #fff;
   text-align: center;
-  font-size: clamp(1rem, 10vw, 6rem);
+  font-size: clamp(1rem, 11vw, 5rem);
 }
 
 .angels {
@@ -64,19 +70,34 @@ body {
   color: #fff;
   font-size: clamp(2rem, 5vw, 2.5rem);
 }
+.arrowDown {
+  margin-top: 20px;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  background: none;
+  border: none;
+  color: #e9e9e9;
+  animation: arrow 1s infinite alternate ease-in-out;
+  cursor: pointer;
+}
 
 section {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 50px;
   padding-bottom: 100px;
-
 }
 .text {
   font-family: "Armenia2";
   text-align: center;
   font-size: clamp(2rem, 5vw, 2rem);
+}
+.line {
+  width: 200px;
+  height: 2px;
+  border-radius: 20px;
+  background-color: #ffffff52;
 }
 
 .date {
@@ -89,32 +110,61 @@ section {
   font-size: clamp(2rem, 5vw, 5rem);
 }
 
-.place{ 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+.place {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   font-size: clamp(2rem, 5vw, 2rem);
-
 }
 .place .time {
-    font-size: clamp(2rem, 5vw, 5rem);
-
+  font-size: clamp(2rem, 5vw, 5rem);
+}
+.place .city {
+  font-family: "Bebas Neue";
 }
 .place .place-img {
-    width: 150px;
-    height: 150px;
+  width: 150px;
+  height: 150px;
 }
 .place .place-img img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .how-to-reach {
-    background: none;
-    padding: 12px 24px;
-    color: #fff;
-    font-size: 1.5rem;
-    border-radius: 20px;
-    border:  2px solid #e9e9e9;
+  background: none;
+  padding: 12px 24px;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  border: 2px solid #e9e9e9;
+}
 
+@keyframes arrow {
+  from {
+    transform: translateY(-7px);
+  }
+  to {
+    transform: translateY(7px);
+  }
+}
+
+#countdown {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+#countdown p {
+  font-weight: 700;
+  font-size: clamp(3rem, -1.5rem + 10vw, 5rem);
+}
+
+#countdown span {
+  font-size: clamp(2rem, -1.5rem + 10vw, 3rem);
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

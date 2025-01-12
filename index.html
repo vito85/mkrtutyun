@@ -5,8 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ՄԵնուա</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,62 +21,99 @@
 
         <h1 class="title">Մկրտության <br> հրավեր</h1>
 
-        <div class="angels">
-            <div class="angel-left">
-                <img src="./images/Angel-1.svg" alt="angel">
-            </div>
-            <div class="angel-right">
-                <img src="./images/Angel-2.svg" alt="angel">
-            </div>
-        </div>
-        <div class="name">
-            <h2>ՄԵՆՈՒԱ</h2>
-        </div>
+        <div class="down">
 
+            <div class="angels">
+                <div class="angel-left">
+                    <img src="./images/Angel-1.svg" alt="angel">
+                </div>
+                <div class="angel-right">
+                    <img src="./images/Angel-2.svg" alt="angel">
+                </div>
+            </div>
+            <div class="name">
+                <h2>ՄԵՆՈՒԱ</h2>
+            </div>
+
+            <a href="#countdown">
+                <button class="arrowDown">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </a>
+        </div>
 
 
 
     </header>
-
-    <!-- <a target="_blank" href="https://icons8.com/icon/wHiahNKx26ZW/church">Church</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
     <section>
+        <div id="countdown">
+            <div className="countdown-item">
+                <p id="days">00</p> <span>ՕՐ</span>
+            </div>
+            <div className="countdown-item">
+                <p id="hours">00</p> <span>ԺԱՄ</span>
+            </div>
+            <div className="countdown-item">
+                <p id="minutes">00</p> <span>ՐՈՊԵ</span>
+            </div>
+            <div className="countdown-item">
+                <p id="seconds">00</p> <span>ՎՐԿ</span>
+            </div>
+        </div>
+        <div class="line" id="down"></div>
+
         <div class="text">
             <h3>Ընկերներ և բարեկամներ</h3>
 
-            <p>Սիրով, հրավիրում ենք ձեզ կիսելու մեզ հետ մեր տղայի՝ <br> Մենուայի սուրբ մկրտության լուսավոր օրը</p>
+            <p>Սիրով, հրավիրում ենք ձեզ կիսելու մեզ հետ մեր դստեր՝ <br>
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">Մենուայի
+                սուրբ մկրտության լուսավոր օրը
+            </p>
         </div>
 
         <div class="date">
             <h3>Սպասում ենք ձեզ</h3>
 
-            <div class="day">20</div>
-            <div class="month">Սեպտեմբեր</div>
+            <div class="day">23</div>
+            <div class="month">Փետրվար</div>
             <div class="year">2025</div>
         </div>
 
+        <div class="line"></div>
         <div class="place">
             <div class="place-img">
                 <img src="./images/church.png" alt="church">
             </div>
             <h3 class="title2">Մկրտություն</h3>
             <div class="time">15:00</div>
-            <div class="city">LA</div>
-            <button class="how-to-reach">
-            Ինչպես հասնել
-            </button>
+            <div class="city">3325 N Glenoaks Blvd, Burbank, CA 91504</div>
+            <a href="https://www.google.com/maps/place/%D0%9A%D0%B0%D1%84%D0%B5%D0%B4%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9+%D1%81%D0%BE%D0%B1%D0%BE%D1%80+%D0%A1%D0%B5%D0%B9%D0%BD%D1%82+%D0%9B%D0%B5%D0%BE%D0%BD+%D0%90%D1%80%D0%BC%D0%B5%D0%BD%D0%B8%D0%B0%D0%BD/@34.2061259,-118.3416447,17z/data=!3m1!4b1!4m6!3m5!1s0x80c29501eb467f7b:0x7d789969db2954a2!8m2!3d34.2061259!4d-118.3416447!16s%2Fm%2F0134gfwm?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank" class="how-to-reach">
+                Ինչպես հասնել
+            </a>
         </div>
+        <div class="line"></div>
+
         <div class="place">
             <div class="place-img">
                 <img src="./images/icons8-glasses-100.png" alt="glasses">
             </div>
             <h3 class="title2">Խնջույք</h3>
             <div class="time">15:00</div>
-            <div class="city">LA</div>
-            <button class="how-to-reach">
-            Ինչպես հասնել
-            </button>
+            <div class="city">7179 Foothill Blvd, Tujunga, CA 91042</div>
+            <a href="https://www.google.com/maps/place/Aurora+Banquet+Hall/@34.248777,-118.2883603,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2eb4bddb3a707:0xba253940e64a6f53!8m2!3d34.248777!4d-118.2883603!16s%2Fg%2F11gl1tg0_q?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank" class="how-to-reach">
+                Ինչպես հասնել
+            </a>
         </div>
+
+
     </section>
+
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
