@@ -27,15 +27,16 @@ body {
   color: #fff;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.208), rgba(0, 0, 0, 0.559)),
-    url("./images/menua_main.jpg");
+    url("./images/photo_2025-01-14_17-45-13.jpg");
   background-repeat: no-repeat;
-  background-color: #000;
+  /* background-color: #000; */
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-attachment: fixed;
   text-align: center;
   padding: 0 30px;
 }
+
 .header {
   padding: 50px 20px;
   height: 100vh;
@@ -167,4 +168,18 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+@media screen and (min-width: 1300px) {
+  body {
+    background-size: 70%;
+    background-color: #5954498e;
+  }
+}
+@media screen and (max-width: 950px) {
+  .header {
+    justify-content: flex-start;
+    gap: 20px;
+  }
 }
