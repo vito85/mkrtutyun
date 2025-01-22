@@ -26,10 +26,10 @@ body {
   font-family: "Armenia";
   color: #fff;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.208), rgba(0, 0, 0, 0.559)),
-    url("./images/photo_2025-01-14_17-45-13.jpg");
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.208), rgba(0, 0, 0, 0.559)),
+    url("./images/newfoto.jpg"); */
   background-repeat: no-repeat;
-  /* background-color: #000; */
+  background-color:#2e430a8e;
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
@@ -168,6 +168,49 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.baby-photo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.baby-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.play-button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.play-button {
+  background-color: #ee2985; /* Ոսկեգույն կոճակ */
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.play-button:hover {
+  background-color: #FFA500; /* Օրանջ գույն հովարման ժամանակ */
+  transform: scale(1.1); /* Մեծացում */
+}
+
+.play-button i {
+  color: white;
+  font-size: 20px;
 }
 
 
